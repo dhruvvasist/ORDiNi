@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  Chipi chipi no chapa chapa
+</body>
+
+</html>
+
+
+<script type="module">
+  import { db } from "./scripts/firebase.js";
+  import { ref, push } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-database.js";
+
+
+  // Push test order to see if Firebase works
+  push(ref(db, "test/"), {
+    name: "ORDiNi Test",
+    time: new Date().toISOString()
+  });
+</script>

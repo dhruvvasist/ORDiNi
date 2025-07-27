@@ -20,8 +20,8 @@
 
 
   // Push test order to see if Firebase works
-  push(ref(db, "test hello hello hello/ hello hello hello"), {
-    name: "ORDiNi Test hello hello hello",
-    time: (new Date().toISOString()) + "This is date dumb"
+  push(ref(db, "test/"), {
+    name: "ORDiNi",
+    time: new Date().toISOString()
   });
 </script>
